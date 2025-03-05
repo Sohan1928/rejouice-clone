@@ -130,3 +130,51 @@ function loaderAnimation() {
   });
 }
 loaderAnimation();
+
+function footerH1Animation() {
+  gsap.from("#footer #footer-bottom-rejouice h1 span", {
+    y: -200,
+    opacity: 0,
+    stagger: 0.1,
+    duration: 0.7,
+    delay: 0.2,
+    scrollTrigger: {
+      trigger: "#footer",
+      scroller: "#main",
+      start: "top 42%",
+      end: "top 30%",
+    },
+  });
+}
+footerH1Animation();
+
+function footerTop() {
+  gsap.from("#footer #footer-content-top", {
+    y: -100,
+    opacity: 0,
+    duration: 1.8,
+    scrollTrigger: {
+      trigger: "#footer",
+      scroller: "#main",
+      start: "top 42%",
+      end: "top 30%",
+    },
+  });
+}
+footerTop();
+
+function footerBottomText() {
+  gsap.from("footer #footer-bottom h4", {
+    y: 120,
+    opacity: 0,
+    duration: 2,
+    delay: 0.4,
+    scrollTrigger: {
+      trigger: "#footer",
+      scroller: "#main",
+      start: "top 42%",
+      end: "top 30%",
+    },
+  });
+}
+footerBottomText();
